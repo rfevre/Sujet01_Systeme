@@ -1,0 +1,42 @@
+Exo1:
+
+Q1- cd systeme/tpfs/a-faire/
+Q2- /home/infoetu/fevrer/workspace/systeme/tpfs/fait/Gestion 
+Q3- systeme/tpfs/fait/Algo 
+Q4- systeme/tpfs/a-faire/Anglais
+
+Q8.1- cp Algo2 Algorithmique
+Q8.2- cp Algo2 ../fait/Algo
+Q8.3- mv Anglais English
+Q8.4- mv English ../fait
+Q8.5- ln Math ../fait/Abandon
+Q8.6- echo "regret">../fait/Abandon
+Q8.7- cat Math
+Q8.8- ln ../fait/Abandon Persevere
+Q8.9- cat Persevere
+Q8.10- rm ../fait/Abandon
+Q8.11- cat Persevere
+Q8.12- cat Math
+Q8.13- mkdir plustard
+Q8.14- ln Math /tmp => commande impossible, le système de fichiers est différentOn peux à la place créer un lien symbolique, grâce à la commande : ln -s Math /tmp/Sauvegarde
+
+Exo2:
+
+Q1- groupe principal : gid=1005(inoetu)
+Q3- la commande n'est pas unique
+Q8- Impossibe de modifier le fichier, car le droit d'ecriture ne m'est pas accordé
+Q9- Suppresion accordé, car le droit d'écriture est accordé sur le Dossier
+Q10- Suppresion accordé, car présence du droit d'écriture sur le dossier
+Q13- Masque courant de création de fichier : 022
+Q15- 777 AND NOT 022
+111 111 111 => 777
+111 010 010 => NOT 022
+111 101 101 = 755 => r_x
+
+Q16- umask 052
+
+Exo 3:
+
+Q1.1- getent passwd | wc -l
+Q1.2- getent passwd | cut -d: -f 5 | cut -d\  -f1 | sort | uniq | wc -l
+Q1.3- 
